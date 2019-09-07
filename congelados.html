@@ -8,39 +8,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <title> Congelados </title> 
+
 <style>
-		.logo{
-		border:thin solid;
-		border-radius: 50px;
-		color:white;
-		
-		width:100%;
-		height:140;
-		margin:auto;
-		padding:0;
-		
-		}
-		
-		#buscar{
-		margin:15px;
-		padding:0;
-		outline: 0;
-		background-color:withe;
-		color: white;
-		font-size: 15;
-		color: #0000FF;
-		width:200px;
-		}
-		
-		#btn{
-		margin:15px;
-		border-radius: 3px;
-		cursor:pointer;
-		outline: 0;
-		}
-	
-	</style>
-	</head>
+		 #tabela{
+    background: white;
+    margin:50px;
+    margin-top: 15px;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 1em #666;
+    color: black;
+    font-size: 20pt;
+    text-align: center;
+  }
+
+  #cabe1{
+      width:50%;
+    }
+  #cabe2{
+      width:0%;
+    }
+  #cabe3{
+      width:50%;
+    }
+
+</style>
+</head>
+
 <body>								
 										<!--menu-->
 <header>
@@ -59,19 +52,12 @@
 </header>
 <br>
 
-								<!--logo-->
-<div class="logo"> 
-<img src="https://media.discordapp.net/attachments/572237353834381323/572239501896974357/LOGO_top.png" width="97%"
-height="100%">
-</div>
-<br>
-
 										<!--Lista de mercadorias-->
-<table style="width: 100%;border: thin solid; border-radius: 20px; color: white; text-align: center;">
+<table id="tabela">
   <tr height="30px">
-    <th width="30%">Congelados</th>
-    <th width="30%">Marcas</th>
-	<th width="30%">Quantidade</th>
+    <th id="cabe1">Congelados</th>
+    <th id="cabe2">Marcas</th>
+	<th id="cabe3">Quantidade</th>
 	</tr>
   
   <tr>

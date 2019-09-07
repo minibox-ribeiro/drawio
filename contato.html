@@ -5,25 +5,103 @@
 <link rel="icon" href="favicon.png" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 <link rel="stylesheet" href="style.css"/>
-<!--informações do site-->
+<!--informa��es do site-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <title> Contato </title>
 <style>
-#btn{
-border-radius: 3px;
-cursor:pointer;
-outline: 0;
+
+.formulario{
+	background-color:white;
+	color:#8b8a8a;
+	margin: auto;
+	padding: 27px;
+	padding-top:35px;
+	margin:50px;
+	margin-top: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 1em #666;
+	text-align: center;
+	font-size: 25pt;
+	}
+
+#c1{
+	background-color:#e6e6e6;
+	border: none;
+	border-radius: 5px;
+	text-align:center;
+	font-size:20pt;
+	width: 300px;
+	height: 50px;
 }
+#c1:hover{
+	background: rgba(110, 110, 110, 0.253);
+}
+
+#c2{
+	background-color:#e6e6e6;
+	border:none;
+	border-radius:5px;
+	text-align: center;
+	font-size:20pt;
+	width: 300px;
+	height: 50px;
+}
+#c2:hover{
+	background: rgba(110, 110, 110, 0.253);
+}
+
+#c3{
+	background-color:#e6e6e6;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	text-align:center;
+	font-size:20pt;
+	width: 300px;
+	height: 50px;
+}
+#c3:hover{
+	background: rgba(110, 110, 110, 0.253);
+}
+
+#msg{
+	background-color:#e6e6e6;
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+    font-size: 20pt;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+}
+	
+#msg:hover{
+    background:rgba(110, 110, 110, 0.253);
+}
+
+#btn{
+	background-color:#00cc44;
+	border-color:#00e64d;
+	border-radius:2px;
+	color:#e6e6e6;
+	cursor:pointer;
+	margin-top: 30px;
+	font-size:20pt;
+	width: 300px;
+	height:50px;
+	}
 
 #rodape {
 	background:#151515;
-	color: white;
+	color: rgba(255, 255, 255, 0.739);
 	width: auto;
-	height: 200px;
+	max-height: 100%;
 	margin-top: 5px;
 	padding: 10px;
+	font-size: 20pt;
 	text-align: center;
+}
 </style>
 </head>
 
@@ -39,33 +117,32 @@ outline: 0;
 </nav>
 </header>
 <br>
-		
-		                         <!--tabela-->
-<table style="width:100%; border:thin solid; border-radius:15px; color:white;"  width="1000px" align="center">
-		
-<tr>
-<td style="font-size:20; color:white;" height="400px"> 
- 
 										<!--formulario-->
 <form action="index.html" method="get">
-<td align="center"> <h3> Formulario de contato </h3> <br>
-Nome: <br>  <input type="username" autofocus></input> <br>
-<br>
-Email: <br> <input type="E-mail"> </input> <br>
-<br>
-Assunto: <br> <input type="text"> </input> <br>
-<br>
-Mensagem: <br> <textarea> </textarea> <br>
-<br>		
-<input id="btn" type="submit" value="Enviar"> </input> </td>						
-</form>
-</tr>
-</table>
+<div class="formulario">
 
- <div id="rodape">
-Endereco: Avenida Castro Alves, numero 2257 - Paraiso Santana. <br>
-Telefone: 4002-8922<br>
-Email:ramonaraujoribeiro18@gmail.com <br>	
- </div>
+<input type="username" autofocus placeholder="Digite seu nome" id="c1"></input> 
+<br>
+<br>
+
+<input type="E-mail" placeholder="Digite seu email" id="c2"> </input> 
+<br>
+<br>
+
+<input type="text" placeholder="Digite o assunto" id="c3"> </input> 
+<br>
+
+Mensagem: <br> <textarea id="msg"> </textarea> 
+<br>
+
+<input type="submit" value="Enviar" id="btn"> </input>
+
+</div>	
+</form>
+<div id="rodape">
+		Endereço: Avenida Castro Alves, número 2257 - Paraíso Santana. <br>
+		Telefone: 4002-8922<br>
+		Email:miniboxrb@gmail.com <br>	
+		 </div>
 </body>	
 </html>

@@ -1,78 +1,146 @@
 <html>
-<head> 
+<head>
 <!--icone site-->
 <link rel="icon" href="favicon.png" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="style.css">
 
-<!--informaçoes do site-->
+		<!--informações do site-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <title>Cadastro</title> 
 <style>
-body{background-color:#0000FF;}
 
-.logo {
-border:thin solid;
-border-radius: 50px;
-color:white;
+form{
+background-color:white;
+margin: auto;
+padding: 27px;
+padding-top:35px;
+margin:50px;
+margin-top: 15px;
+border-radius: 5px;
+box-shadow: 0px 0px 1em #666;
+text-align: center;
+font-size: 25pt;
 
-width:100%;
-height:140;
-margin:0;
-padding:0
 }
 
-#form ul{
-border:thin solid;
-border-radius:15px;
-margin:0;
-padding:0;
-color:white;
-width:auto
-}
-
-#form ul li{
-list-style:none;
+#c1{
+background-color:#e6e6e6;
+border: none;
+border-radius: 5px;
 text-align:center;
+font-size:20pt;
+width: 300px;
+height: 50px;
+}
+#c1:hover{
+	background: rgba(110, 110, 110, 0.253);
 }
 
-#btn{
-border-radius: 3px;
+#c2{
+background-color:#e6e6e6;
+border:none;
+border-radius:5px;
+text-align: center;
+font-size:20pt;
+width: 300px;
+height: 50px;
+}
+#c2:hover{
+	background: rgba(110, 110, 110, 0.253);
+}
+
+#c3{
+background-color:#e6e6e6;
+border: none;
+border-radius: 5px;
+text-align:center;
+font-size:20pt;
+width: 300px;
+height: 50px;
+}
+#c3:hover{
+	background: rgba(110, 110, 110, 0.253);
+}
+
+#c4{
+background-color:#e6e6e6;
+border: none;
+border-radius:5px;
+text-align:center;
+font-size:20pt;
+width: 300px;
+height: 50px;
+}
+#c4:hover{
+	background: rgba(110, 110, 110, 0.253);
+}
+
+#btn1{
+background-color:#00cc44;
+border-color:#00e64d;
+border-radius:2px;
+color:#e6e6e6;
 cursor:pointer;
-outline: 0;
+font-size:20pt;
+width: 300px;
+height:50px;
 }
+
+#btn1:hover{
+border-radius: 5px;
+outline:none;
+}
+
 </style>
+
 </head>
+
 <body>
-									<!--logo-->
-<div class="logo">
-<img src="https://media.discordapp.net/attachments/572237353834381323/572239501896974357/LOGO_top.png" width="97%"
-height="100%">
+    <!--menu-->
+<header> 	
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu"> &#9776;</label>						
+		<nav class="menu"> 
+		<ul>
+		<li> <a href="index.html">Inicio </a> </li>
+		<li> <a href="mercadorias.html"> Mercadorias </a> </li>
+		<li> <a href="fornecedores.html">Fornecedores </a> </li>
+		<li> <a href="inserir.html"> Inserir </a> </li>
+		<li> <input id="buscar" type="search" placeholder="Buscar..."/> </input> </li>
+		<li> <input id="btn" type="submit" value="Buscar"> </input> </li> 
+		</ul>
+		</nav>	
+		</header>
+        <br>
+        
+        <!--Formulario-->
+<form action="login.html" method="get">
+<div class="form">
+<input type="text" placeholder="Digite seu nome" id="c1" autofocus/>
+<br>
+<br>
+
+<input type="number" placeholder="Digite seu CPF" id="c2"/>
+<br>
+<br>
+
+<input type="email" placeholder="Digite seu Email" id="c3"/>
+<br>
+<br>
+
+<input type="password" placeholder="Digite sua senha" id="c4"/>
+<br>
+<br>
+
+<input type="password" placeholder="Confirmar senha" id="c4"/>
+<br>
+<br>
+
+<input type="submit" value="Cadastrar" id="btn1"/>
 </div>
-<br>
-									<!--formulario-->
-<div id="form">
-<ul>
-<br>
-<li> <h3>Acesso ao sistema </h3></li>
+</form>
 
-<li> <form action="login.html" method="get"> </li>
-
-<li> Nome: <br> <input type="text" name="username" required="required" value="Ramon Araujo Ribeiro" autocomplete autofocus> </input></li>
-<br> 
-<li> CPF: <br> <input type="number" name="number"required="required" value="123456789"> </input> </li>
-<br>
-<li> E-mail: <br> <input type="email" name="email"  required="required" value="ramonaraujo6663@gmail.com"> </input></li>
-<br>
-<li> Senha: <br> <input type="password" name="password" maxlength="10" required="required" value="mainbardo"> </input></li>
-<br>
-<li> Confirmar Senha: <br> <input type="password" name="pass" maxlength="10" required="required" value="mainbardo"> </input></li>
-<br>
-
-<li><input id="btn" type="submit" value="Cadastrar"/> </input></li>	
-<br> <br>
- </form> 
-</ul>
-</div>
 </body>
 </html>
