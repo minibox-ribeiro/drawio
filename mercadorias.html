@@ -1,0 +1,114 @@
+<html>
+<head>
+<!--icone site-->
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<!--informações do site-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title> Mercadorias </title>
+<link rel="stylesheet" href="style.css">
+<style>
+		
+#tabela{}
+		
+		#tabela ul{
+		background: white;
+		border: thin solid;
+		border-radius: 15px;
+		box-shadow: 0px 0px 1em #666;
+		color:white;
+		margin:50px;
+		margin-top: 15px;
+		
+		width:auto
+		}
+		
+		#tabela ul li{
+		margin:auto;
+		list-style: none;
+		text-align: center;
+		font-size:25pt;
+		padding: 5px;
+		}
+		
+		#tabela ul li a{
+		color:black;
+		display: inline-block;
+		text-decoration: none;
+
+		}
+		
+		
+		#tabela ul li a:hover{ 
+		color:green;
+		}
+
+		@media only screen and (max-width: 768px){
+		#tabela ul{
+		background: white;
+		border: thin solid;
+		border-radius: 15px;
+		box-shadow: 0px 0px 1em #666;
+		color:white;
+		margin:auto;
+		width:auto;
+		height: 430px;
+		}
+		
+		#tabela ul li{
+		margin:auto;
+
+		list-style: none;
+		text-align: center;
+		font-size:25pt;
+		padding-right: 30px;
+		}	
+		}
+		
+	</style>	
+</head>
+
+	<body>
+						<!--menu-->
+<header> 	
+<input type="checkbox" id="btn-menu">
+<label for="btn-menu"> &#9776;</label>		
+
+<nav class="menu"> 
+
+<ul>
+	
+<li> <a href="index.html">Inicio </a> </li>
+<li id="selecionado"> <a href="mercadorias.html"> Mercadorias </a> </li>
+<li> <a href="fornecedores.html">Fornecedores </a> </li>
+<li> <a href="inserir.html"> Inserir </a> </li>
+<li> <input id="buscar" type="search" placeholder="Buscar..."/> </input> </li>
+<li> <input id="btn" type="submit" value="Buscar"> </input> </li> 
+
+</ul>
+
+</nav>	
+</header>
+<br>
+    
+				<!--Lista de mercadorias-->
+	<div id="tabela">
+	<ul>
+	<li> <a href="alimentos.html">Alimentos </a> </li>
+	<li> <a href="biscoitos.html"> Biscoitos </a> </li>
+	<li> <a href="bolachas.html">Bolachas </a> </li>
+	<li> <a href="enlatados.html">Enlatados </a> </li>
+	<li> <a href="congelados.html">Congelados </a> </li>
+	<li> <a href="limpeza.html">Limpeza </a> </li>
+	<li> <a href="refrigerante.html">Refrigerantes</a> </li>
+	<li> <a href="salgados.html">Salgados </a> </li>
+	<li> <a href="sucos.html">Sucos </a> </li>
+
+	</ul>
+
+	</div>
+	
+</body>
+		
+</html>
