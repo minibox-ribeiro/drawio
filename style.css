@@ -32,7 +32,7 @@ header label:hover{
 
 .menu ul{
 	animation-name: anime;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	list-style:none;
 	margin:0;
 	padding:0;
