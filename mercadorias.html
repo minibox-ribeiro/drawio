@@ -13,6 +13,8 @@
 #tabela{}
 		
 		#tabela ul{
+		animation-name: mov;
+		animation-duration: 2s;
 		background: white;
 		border: thin solid;
 		border-radius: 15px;
@@ -43,6 +45,17 @@
 		#tabela ul li a:hover{ 
 		color:green;
 		}
+
+@keyframes mov{
+    from{
+        opacity: 0;
+        transform:translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
 
 		@media only screen and (max-width: 768px){
 		#tabela ul{
